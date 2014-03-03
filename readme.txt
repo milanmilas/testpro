@@ -15,3 +15,28 @@ git checkout --
 git log
 #press Q to exit
 git log -p
+git commit --amend
+#reset cahnges in the stage/ unmodify files
+git reset HEAD file
+git checkout -- file
+
+#with clone remoteNome= origin
+git clone git://github.com/schacon/ticgit.git
+git remote add pb git://github.com/paulboone/ticgit.git
+git remote rename pb paul
+git remote -v
+#gets data from the remote to local repository, no merge
+git fetch pb
+#gets and merges data
+git pull
+
+git push origin master
+
+#info
+git remote show origin
+
+git remote rm paul
+
+
+
+
