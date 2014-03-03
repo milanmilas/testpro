@@ -37,6 +37,14 @@ git remote show origin
 
 git remote rm paul
 
+git tag
+git tag -a v1.4 -m 'my version 1.4'
+git show v1.4
+#tags are not pushed automatically
+git push origin v1.5
+#push all tags
+it push origin --tags
+
 
 
 
