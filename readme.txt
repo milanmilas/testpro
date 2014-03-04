@@ -4,6 +4,10 @@ cd /c
 ls
 git init
 git add
+#only modified files
+git add -u
+#add all files
+git add -A
 git commti -m "this is the initial commit"
 git status
 #skipping the staging area
@@ -45,6 +49,18 @@ git push origin v1.5
 #push all tags
 it push origin --tags
 
+git reset --HEAD~1
+#changes will be returned to the staging area
+git reset --soft HEAD~1
 
+#remove files
+git clean -f
+#what remove command will do
+git clean -n
 
-
+git log --oneline
+git log --oneline --graph
+git shortlog
+git log --format=short
+#number of lines per user
+git shortlog -sn
