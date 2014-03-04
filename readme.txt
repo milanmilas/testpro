@@ -74,4 +74,36 @@ $ git checkout -b iss53
 $ git checkout master
 $ git merge hotfix
 
+$ git branch
+
+git push (remote) (branch)
+
+$ git checkout experiment
+$ git rebase master
+
+#fetch and merge
+git pull
+
+git branch -r
+#te/master
+
+git branch -v
+#te https://github.......
+
+git commit -am "text"
+
+git push --tags
+
+git reflog
+
+git stash
+
+git stash list
+
+git stash apply
+
+git mergetool
+
+git branch newfeature tag1
+
 
