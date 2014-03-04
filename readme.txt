@@ -64,3 +64,12 @@ git shortlog
 git log --format=short
 #number of lines per user
 git shortlog -sn
+
+#two commands are the same as
+#$ git branch iss53
+#$ git checkout iss53
+
+$ git checkout -b iss53
+
+$ git checkout master
+$ git merge hotfix
